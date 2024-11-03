@@ -1,0 +1,9 @@
+{
+    "idf.adapterTargetName": "esp32",
+    "idf.flashType": "UART",
+    "idf.portWin": "COM7",
+    "idf.espAdfPathWin": "C:/playground/esp-adf/esp-adf",
+    "files.associations": {
+        "freertos.h": "c"
+    }
+}
