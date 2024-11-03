@@ -50,3 +50,11 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# ESP32 build environment specific
+**/build/**
+**/.devcontainer/**
+**/CmakeCache.txt
+**/*.lock
+**/CMakeFiles/**
+**/managed_components/**
