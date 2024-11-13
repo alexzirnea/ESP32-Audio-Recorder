@@ -1,4 +1,5 @@
 dependencies:
+  espressif/mdns: "^1.0.3"
   espressif/esp_hosted:
     version: "~0.0.9"
     rules:
@@ -7,3 +8,7 @@ dependencies:
     version: "~0.3.0"
     rules:
       - if: "target in [esp32p4]"
+  idf:
+    version: ">=5.0"
+  protocol_examples_common:
+    path: ${IDF_PATH}/examples/common_components/protocol_examples_common

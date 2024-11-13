@@ -57,6 +57,8 @@ static const char *TAG = "RECORD_TO_SDCARD";
 #define BIT_RATE            80000
 #endif
 
+void web_interface_task(void * pv);
+
 void app_main(void)
 {
     audio_pipeline_handle_t pipeline;
@@ -287,6 +289,8 @@ void app_main(void)
 
     ESP_LOGI(TAG, "[ 6 ] Listen for all pipeline events, record for %d Seconds", RECORD_TIME_SECONDS);
     int second_recorded = 0;
+    xTaskCreatePinnedToCore(web_interface_task, "core1", 2048, NULL, 0, NULL, 1);
+    //web_interface_task(NULL);
     while (1) {
         audio_event_iface_msg_t msg;
         if (audio_event_iface_listen(evt, &msg, 1000 / portTICK_RATE_MS) != ESP_OK) {
