@@ -8,6 +8,10 @@
 		},
 		{
 			"path": "."
+		},
+		{
+			"name": "l1_e2",
+			"path": "../../../ncs/l1_e2"
 		}
 	],
 	"settings": {
@@ -32,7 +36,14 @@
 			"charconv": "c",
 			"complex": "c",
 			"ranges": "c",
-			"cstdlib": "c"
+			"cstdlib": "c",
+			"mutex": "c",
+			"shared_mutex": "c",
+			"stdio.h": "c",
+			"esp_log.h": "c",
+			"audio_idf_version.h": "c",
+			"board.h": "c",
+			"audio_hal.h": "c"
 		}
 	}
 }

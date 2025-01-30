@@ -101,5 +101,5 @@ void web_interface_task(void * pv)
     ESP_ERROR_CHECK(example_connect());
     ESP_ERROR_CHECK(init_fs());
     ESP_ERROR_CHECK(start_rest_server(CONFIG_EXAMPLE_WEB_MOUNT_POINT));
-    while(1);
+    vTaskDelete(NULL);
 }

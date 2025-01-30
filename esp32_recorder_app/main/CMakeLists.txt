@@ -1,4 +1,4 @@
-idf_component_register(SRCS "main.c"
+idf_component_register(SRCS "recorder.c" "main.c"
                             "esp_rest_main.c"
                             "rest_server.c"
                     INCLUDE_DIRS ".")
